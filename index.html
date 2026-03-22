@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <style>
+        /* General Page Setup */
+        body {
+            background-color: #0a0a0a; /* Almost pitch black */
+            color: #ffffff; /* White text */
+            font-family: 'Press Start 2P', monospace; /* The pixel font */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Takes up the full screen height */
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Main Title (Like "Fern") */
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* > Enter World < Link */
+        .enter-world {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px;
+            color: #39ff14; /* Neon terminal green */
+            text-decoration: none;
+            font-size: 14px;
+            animation: pulse 1.5s infinite; /* Makes it flash slightly */
+            transition: 0.2s;
+        }
+
+        .enter-world:hover {
+            color: #ffffff;
+            background-color: #39ff14;
+            text-shadow: none;
+        }
+
+        /* Blinking Animation for Enter World */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* Navigation Links (Home, Projects, Contact, etc.) */
+        nav {
+            margin: 30px 0;
+            display: flex;
+            gap: 20px; /* Space between links */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #888888; /* Dim gray */
+            text-decoration: none;
+            font-size: 10px;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff; /* Turns bright white when hovered */
+            text-shadow: 0 0 8px #ffffff; /* Adds a glow effect */
+        }
+
+        /* Hello World Text */
+        .hello-world {
+            font-size: 10px;
+            color: #555555;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>YOUR NAME</h1>
+
+    <a href="#" class="enter-world">&gt; Enter World &lt;</a>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+        <a href="#">Donate</a>
+    </nav>
+
+    <div class="hello-world">Hello World!</div>
+
+</body>
+</html>
